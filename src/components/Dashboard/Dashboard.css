@@ -1,6 +1,7 @@
 .Dashboard {
-  background-color: aliceblue;
+  background-color: var(--linen);
   min-height: 100vh;
   text-align: center;
   padding: 50px;
+
 }

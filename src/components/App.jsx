@@ -9,7 +9,7 @@ import JackieLegs from './Cats/JackieLegs.jsx';
 import Renly from './Cats/Renly.jsx';
 import Shadow from './Cats/Shadow.jsx';
 import Dashboard from './Dashboard/Dashboard.jsx';
-import Layout from './Layout/Layout.jsx';
+import Layout from './Page/Layout.jsx';
 import Pizza from './Pizza/Pizza.jsx';
 
 export default function App() {
