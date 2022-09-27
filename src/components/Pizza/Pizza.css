@@ -1,0 +1,7 @@
+.Pizza {
+  background-color: darkred;
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+  padding: 50px;
+}

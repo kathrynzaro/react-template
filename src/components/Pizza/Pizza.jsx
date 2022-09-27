@@ -1,5 +1,7 @@
+import styles from './Pizza.css';
+
 export default function Pizza() {
   return (
-    <div>Pizza</div>
+    <div className={styles.Pizza}>Pizza</div>
   );
 }

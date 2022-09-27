@@ -1,5 +1,7 @@
+import styles from './Cats.css';
+
 export default function Cats() {
   return (
-    <div>Cats</div>
+    <div className={styles.Cats}>Cats</div>
   );
 }
