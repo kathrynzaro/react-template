@@ -1,6 +1,6 @@
 .Pizza {
-  background-color: darkred;
-  color: white;
+  background-color: var(--red);
+  color: var(--white);
   min-height: 100vh;
   text-align: center;
   padding: 50px;
