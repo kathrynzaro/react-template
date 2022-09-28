@@ -33,7 +33,7 @@ export default function Dashboard() {
         </label>
 
         <fieldset>
-          <legend>Do you accept?</legend>
+          <legend>Do you agree to our terms and services?</legend>
 
           <label>
             I accept

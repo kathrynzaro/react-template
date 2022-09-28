@@ -21,7 +21,7 @@ form {
 .Dashboard label {
   display: grid;
   gap: 6px;
-  font-size: .7rem;
+  font-size: .6rem;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -31,11 +31,11 @@ input[type='radio'] {
   border: none;
   border-radius: 5px;
   box-shadow:
-    0 1px 1px hsl(0deg 0% 0% / 0.05),
-    0 2px 2px hsl(0deg 0% 0% / 0.05),
-    0 4px 4px hsl(0deg 0% 0% / 0.05),
-    0 8px 8px hsl(0deg 0% 0% / 0.05),
-    0 16px 16px hsl(0deg 0% 0% / 0.05)
+    0 1px 1px hsl(0deg 0% 0% / 0.025),
+    0 2px 2px hsl(0deg 0% 0% / 0.025),
+    0 4px 4px hsl(0deg 0% 0% / 0.025),
+    0 8px 8px hsl(0deg 0% 0% / 0.025),
+    0 16px 16px hsl(0deg 0% 0% / 0.025)
   ;
   
   font-family: 'Montserrat';
@@ -72,11 +72,11 @@ textarea {
 
 .Dashboard fieldset label {
   justify-items: center;
-  font-size: .6rem;
+  font-size: .5rem;
 }
 
 fieldset legend {
-  font-size: .7rem;
+  font-size: .6rem;
   letter-spacing: 1px;
   text-transform: uppercase;  
   padding: 20px 0;
@@ -87,14 +87,14 @@ form button {
   padding: 10px;
   border-radius: 5px;
   box-shadow:
-    0 1px 1px hsl(0deg 0% 0% / 0.05),
-    0 2px 2px hsl(0deg 0% 0% / 0.05),
-    0 4px 4px hsl(0deg 0% 0% / 0.05),
-    0 8px 8px hsl(0deg 0% 0% / 0.05),
-    0 16px 16px hsl(0deg 0% 0% / 0.05)
+    0 1px 1px hsl(0deg 0% 0% / 0.025),
+    0 2px 2px hsl(0deg 0% 0% / 0.025),
+    0 4px 4px hsl(0deg 0% 0% / 0.025),
+    0 8px 8px hsl(0deg 0% 0% / 0.025),
+    0 16px 16px hsl(0deg 0% 0% / 0.025)
   ;
   
-  font-size: .8rem;
+  font-size: .7rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
