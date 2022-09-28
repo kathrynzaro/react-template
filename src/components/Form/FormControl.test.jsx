@@ -2,7 +2,8 @@ import { render, screen } from '@testing-library/react';
 import {
   InputControl,
   SelectControl,
-  TextAreaControl
+  TextAreaControl,
+  CheckboxControl
 } from './FormControl.jsx';
 
 test('Input Control', async () => {
@@ -68,3 +69,18 @@ test('Text Area Control', async () => {
   expect(textAreaControl.placeholder).toBe('about yourself');
 });
 
+test('Checkbox Control', async () => {
+  render(
+    <CheckboxControl
+      legend="Yes or no?"
+      label="Yes"
+      name="accept"
+      required
+    />
+  );
+
+  const legend = screen.getByText('Yes or no?');
+  expect(legend).not.toBeNull();
+  const checkboxControl = screen.getByLabelText('Yes');
+  expect(checkboxControl.required).toBe(true);
+});

@@ -44,3 +44,15 @@ export function TextAreaControl({ label, ...rest }) {
     </FormControl>
   );
 }
+
+export function CheckboxControl({ legend, label, ...rest }) {
+  return (
+    <fieldset>
+      <legend>{legend}</legend>
+      <label>
+        <input type="checkbox" {...rest} />
+        {label}
+      </label>
+    </fieldset>
+  );
+}

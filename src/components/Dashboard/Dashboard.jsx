@@ -2,7 +2,8 @@ import styles from './Dashboard.css';
 import {
   InputControl,
   SelectControl,
-  TextAreaControl
+  TextAreaControl,
+  CheckboxControl
 } from '../Form/FormControl';
 
 export default function Dashboard() {
@@ -41,19 +42,10 @@ export default function Dashboard() {
           placeholder="tell us about yourself"
         />
 
-        <fieldset>
-          <legend>Do you agree to our terms and services?</legend>
-
-          <label>
-            I accept
-            <input type="checkbox" />
-          </label>
-
-          <label>
-            I do not accept
-            <input type="checkbox" />
-          </label>
-        </fieldset>
+        <CheckboxControl legend="Do you agree to our terms and services?"
+          label="I accept" />
+        
+      
         <button>Submit</button>
       </form>
     </div>
