@@ -1,5 +1,9 @@
 import styles from './Dashboard.css';
-import { InputControl, SelectControl } from '../Form/FormControl';
+import {
+  InputControl,
+  SelectControl,
+  TextAreaControl
+} from '../Form/FormControl';
 
 export default function Dashboard() {
   return (
@@ -31,10 +35,11 @@ export default function Dashboard() {
           <option value="3">C</option>
         </SelectControl>
 
-        <label>
-          Bio
-          <textarea name="bio" placeholder="tell us about yourself" />
-        </label>
+        <TextAreaControl
+          label="Bio"
+          name="bio"
+          placeholder="tell us about yourself"
+        />
 
         <fieldset>
           <legend>Do you agree to our terms and services?</legend>

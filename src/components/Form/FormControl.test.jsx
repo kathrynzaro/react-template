@@ -1,5 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import { InputControl, SelectControl } from './FormControl.jsx';
+import {
+  InputControl,
+  SelectControl,
+  TextAreaControl
+} from './FormControl.jsx';
 
 test('Input Control', async () => {
   render(
@@ -46,5 +50,21 @@ test('Select Control with placeholder', async () => {
   const placeHolderOption = selectControl.options[0];
   expect(placeHolderOption.textContent).toBe('choose a type of pizza');
   expect(placeHolderOption.disabled).toBe(true);
+});
+
+test('Text Area Control', async () => {
+  render(
+    <TextAreaControl
+      label="Bio"
+      name="bio"
+      required
+      placeholder="about yourself"
+    />
+  );
+
+  const textAreaControl = screen.getByLabelText('Bio');
+  expect(textAreaControl.name).toBe('bio');
+  expect(textAreaControl.required).toBe(true);
+  expect(textAreaControl.placeholder).toBe('about yourself');
 });
 
