@@ -1,5 +1,5 @@
 import styles from './Dashboard.css';
-import { InputControl } from '../Form/FormControl';
+import { InputControl, SelectControl } from '../Form/FormControl';
 
 export default function Dashboard() {
   return (
@@ -20,17 +20,16 @@ export default function Dashboard() {
         />
 
 
-        <label>
-          Option
-          <select>
-            <option disabled selected value="">
-              Select an option...
-            </option>
-            <option value="1">A</option>
-            <option value="2">B</option>
-            <option value="3">C</option>
-          </select>
-        </label>
+        <SelectControl
+          label="Option"
+          required
+          name="option"
+          placeholder="select an option"
+        >
+          <option value="1">A</option>
+          <option value="2">B</option>
+          <option value="3">C</option>
+        </SelectControl>
 
         <label>
           Bio
