@@ -1,19 +1,24 @@
 import styles from './Dashboard.css';
+import { InputControl } from '../Form/FormControl';
 
 export default function Dashboard() {
   return (
     <div className={styles.Dashboard}>
       <form>
 
-        <label>
-          Name
-          <input name="name" placeholder="Your name" />
-        </label>
+        <InputControl
+          label="Name"
+          name="name"
+          placeholder="your name"
+        />
         
-        <label>
-          Date
-          <input type="date" name="date" />
-        </label>
+        <InputControl
+          label="Date"
+          required
+          type="date"
+          name="date"
+        />
+
 
         <label>
           Option
