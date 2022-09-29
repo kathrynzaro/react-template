@@ -50,8 +50,8 @@ export function CheckboxControl({ legend, label, ...rest }) {
     <fieldset className={styles.CheckboxControl}>
       <legend className={styles.LabelText}>{legend}</legend>
       <label>
-        <input type="checkbox" {...rest} />
         {label}
+        <input type="checkbox" {...rest} />
       </label>
     </fieldset>
   );
