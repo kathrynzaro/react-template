@@ -3,7 +3,8 @@ import {
   InputControl,
   SelectControl,
   TextAreaControl,
-  CheckboxControl
+  CheckboxControl,
+  FormButton
 } from '../Form/FormControl';
 
 export default function Dashboard() {
@@ -46,7 +47,7 @@ export default function Dashboard() {
           label="I accept" />
         
       
-        <button>Submit</button>
+        <FormButton text="Submit" />
       </form>
     </div>
   );
