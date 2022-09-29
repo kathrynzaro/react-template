@@ -47,8 +47,8 @@ export function TextAreaControl({ label, ...rest }) {
 
 export function CheckboxControl({ legend, label, ...rest }) {
   return (
-    <fieldset>
-      <legend>{legend}</legend>
+    <fieldset className={styles.CheckboxControl}>
+      <legend className={styles.LabelText}>{legend}</legend>
       <label>
         <input type="checkbox" {...rest} />
         {label}
@@ -58,5 +58,5 @@ export function CheckboxControl({ legend, label, ...rest }) {
 }
 
 export function FormButton({ text }) {
-  return <button>{text}</button>;
+  return <button className={styles.FormButton}>{text}</button>;
 }

@@ -43,7 +43,7 @@ export default function Dashboard() {
           placeholder="tell us about yourself"
         />
 
-        <CheckboxControl legend="Do you agree to our terms and services?"
+        <CheckboxControl legend="Do you accept our terms and services?"
           label="I accept" />
         
       

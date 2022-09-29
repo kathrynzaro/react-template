@@ -10,108 +10,10 @@
   justify-content: center;
 }
 
-form {
+.Dashboard form {
   display: grid;
   gap: 10px;
   
   padding: 20px;
   width: 320px;
-}
-
-.Dashboard label {
-  display: grid;
-  gap: 6px;
-  font-size: .6rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-input, select, textarea, input[type='checkbox'],
-input[type='radio'] {
-  border: none;
-  border-radius: 5px;
-  box-shadow:
-    0 1px 1px hsl(0deg 0% 0% / 0.025),
-    0 2px 2px hsl(0deg 0% 0% / 0.025),
-    0 4px 4px hsl(0deg 0% 0% / 0.025),
-    0 8px 8px hsl(0deg 0% 0% / 0.025),
-    0 16px 16px hsl(0deg 0% 0% / 0.025)
-  ;
-  
-  font-family: 'Montserrat';
-  font-size: .75rem;
-}
-
-input:not([type='checkbox']):not([type='radio']), select, textarea {
-  display: block;
-  width: 100%;
-  height: 40px;
-  padding: 5px 10px;
-}
-
-input[type='checkbox'],
-input[type='radio'] {
-  width: 13px;
-  height: 13px;
-  margin: 3px 0 15px;
-}
-
-textarea {
-  border: none;
-  height: 6em;
-  resize: vertical;
-}
-
-.Dashboard fieldset {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.Dashboard fieldset label {
-  justify-items: center;
-  font-size: .5rem;
-}
-
-fieldset legend {
-  font-size: .6rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;  
-  padding: 20px 0;
-}
-
-form button {
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow:
-    0 1px 1px hsl(0deg 0% 0% / 0.025),
-    0 2px 2px hsl(0deg 0% 0% / 0.025),
-    0 4px 4px hsl(0deg 0% 0% / 0.025),
-    0 8px 8px hsl(0deg 0% 0% / 0.025),
-    0 16px 16px hsl(0deg 0% 0% / 0.025)
-  ;
-  
-  font-size: .7rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-button,
-select,
-input[type='checkbox'],
-input[type='radio'],
-input[type='date']
-{
-  cursor: pointer;
-}
-
-select:hover, 
-button:hover, 
-input[type='date']:hover, 
-input:hover, 
-textarea:hover {
-  opacity: .5;
 }
