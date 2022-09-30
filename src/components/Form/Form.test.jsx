@@ -89,4 +89,50 @@ test('control changes update data', async () => {
   });
 });
 
+test('form updates partial data from initial data', async () => {
+  const user = userEvent.setup();
+
+  const handleSubmit = jest.fn();
+
+  render(
+    <Test
+      onSubmit={handleSubmit}
+      formData={{
+        user: 'username',
+        pizza: '1',
+        bio: 'about yourself',
+        accepted: true,
+      }}
+    />
+  );
+
+  const input = screen.getByLabelText('User Name');
+  expect(input.value).toBe('username');
+  await user.clear(input);
+  await user.type(input, 'updated');
+
+  const selectControl = screen.getByLabelText('Pizza');
+  expect(selectControl.value).toBe('1');
+
+  const textArea = screen.getByLabelText('Bio');
+  expect(textArea.value).toBe('about yourself');
+  await user.clear(textArea);
+  await user.type(textArea, 'updated about');
+
+  const checkbox = screen.getByLabelText('Yes');
+  await user.click(checkbox);
+  expect(checkbox.checked).toBe(true); 
+  
+  await user.click(screen.getByRole('button'));
+
+  expect(handleSubmit).toHaveBeenCalledWith({
+    user: 'updated',
+    pizza: '1',
+    bio: 'updated about',
+    accepted: true,
+  });  
+
+});
+
+
 
