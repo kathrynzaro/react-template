@@ -134,5 +134,42 @@ test('form updates partial data from initial data', async () => {
 
 });
 
+test('Form updates when initial data changes', async () => {
+  const user = userEvent.setup();
+
+  const handleSubmit = jest.fn();
+
+  const { rerender } = render(
+    <Test
+      onSubmit={handleSubmit}
+      formData={{
+        user: 'username',
+        bio: 'about yourself',
+        pizza: '1',
+        accepted: true,
+      }}
+    />
+  );
+
+  const input = screen.getByLabelText('User Name');
+  await user.clear(input);
+  await user.type(input, 'xyz');
+
+  const changedData = {
+    user: 'updated',
+    bio: 'updated about',
+    pizza: '2',
+    accepted: false,
+  };
+
+  rerender(<Test onSubmit={handleSubmit} formData={changedData} />);
+
+  await user.click(screen.getByRole('button'));
+
+  expect(handleSubmit).toHaveBeenCalledWith(changedData);
+});
+
+
+
 
 
