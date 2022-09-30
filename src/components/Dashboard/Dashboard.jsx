@@ -47,7 +47,7 @@ export default function Dashboard() {
           label="I accept" />
         
       
-        <FormButton text="Submit" />
+        <FormButton>Submit</FormButton>
       </form>
     </div>
   );
