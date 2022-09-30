@@ -15,6 +15,11 @@
   border-bottom: 1px solid var(--nav-link);
   font-size: .9rem;
   text-transform: lowercase;
+  color: var(--black);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  opacity: .5;
 }
 
 

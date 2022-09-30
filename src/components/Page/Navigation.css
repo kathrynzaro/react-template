@@ -6,13 +6,13 @@
   height: 100%;
 }
 
-a {
-  color: var(--nav-link);
+.Navigation a {
+  color: var(--black);
   text-decoration: none;
   cursor: pointer;
-  transition: all 1s ease-in-out;
-  opacity: .6;
-  
+  transition: all .5s ease-in-out;
+  opacity: .5;
+  font-size: .8rem;
 }
 
 a:hover {
