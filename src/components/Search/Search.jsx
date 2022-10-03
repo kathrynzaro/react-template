@@ -1,5 +1,7 @@
+import SearchForm from './SearchForm.jsx';
+
 export default function Search() {
   return (
-    <div>Search</div>
+    <SearchForm />
   );
 }
