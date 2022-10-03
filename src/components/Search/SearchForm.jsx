@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { FormButton, InputControl } from '../Form/FormControl.jsx';
 import useSearchForm from '../../hooks/use-search-form.js';
+import styles from './Search.css';
 
 export default function SearchForm({ onSubmit }) {
   const { pokemon, setPokemon, searchForm, setSearchForm } = useSearchForm();
@@ -12,7 +13,7 @@ export default function SearchForm({ onSubmit }) {
   };
 
   return (
-    <form onSubmit={formSubmit}>
+    <form className={styles.SearchForm} onSubmit={formSubmit}>
       <InputControl 
         type="text"
         name="pokemon"
