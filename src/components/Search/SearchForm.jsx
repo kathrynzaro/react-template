@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { FormButton, InputControl } from '../Form/FormControl.jsx';
 import useSearchForm from '../../hooks/use-search-form.js';
 
