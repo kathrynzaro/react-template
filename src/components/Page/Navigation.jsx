@@ -5,6 +5,7 @@ export default function Navigation() {
   return (
     <nav className={styles.Navigation}>
       <NavLink to="">Home</NavLink>
+      <NavLink to="search">Search</NavLink>
       <NavLink to="pizza">Pizza</NavLink>
       <NavLink to="cats">Cats</NavLink>
     </nav>

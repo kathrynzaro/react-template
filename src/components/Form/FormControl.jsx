@@ -59,6 +59,7 @@ export function CheckboxControl({ legend, label, ...rest }) {
 }
 
 export function FormButton({ children, ...rest }) {
-  return <button className={styles.FormButton} {...rest}>{children}
+  return <button className={styles.FormButton} {...rest}>
+    {children}
   </button>;
 }
