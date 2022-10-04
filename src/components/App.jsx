@@ -4,15 +4,14 @@ import {
   Route,
   Navigate,
 } from 'react-router-dom';
+import Cats from './Cats/Cats.jsx';
+import JackieLegs from './Cats/JackieLegs.jsx';
+import Renly from './Cats/Renly.jsx';
+import Shadow from './Cats/Shadow.jsx';
 import Dashboard from './Dashboard/Dashboard.jsx';
 import Layout from './Page/Layout.jsx';
-import Customers from './Sales/Customers.jsx';
-import Deposits from './Sales/Deposits.jsx';
-import Invoices from './Sales/Invoices.jsx';
-import Sales from './Sales/Sales.jsx';
-import Users from './Users/Users.jsx';
-import Auth from './Auth/Auth.jsx';
-import AuthForm from './Auth/AuthForm.jsx';
+import Pizza from './Pizza/Pizza.jsx';
+import Search from './Search/Search.jsx';
 
 export default function App() {
   return (
@@ -20,19 +19,16 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Dashboard />} />
-          <Route path="users" element={<Users />} />
-          <Route path="sales" element={<Sales />}>
-            <Route index element={<Deposits />} />
-            <Route path="invoices" element={<Invoices />} />
-            <Route path="customers" element={<Customers />} />
+          <Route path="search" element={<Search />} />
+          <Route path="pizza" element={<Pizza />} />
+          <Route path="cats" element={<Cats />}>
+            <Route index element={<Renly />} />
+            <Route path ="jackielegs" element={<JackieLegs />} />
+            <Route path ="shadow" element={<Shadow />} />
           </Route>
-        </Route>
 
-        <Route path="auth" element={<Auth />}>
-          <Route index element={<AuthForm mode="signin" />} />
-          <Route path="signup" element={<AuthForm mode="signup" />} />
-        </Route>
 
+        </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>

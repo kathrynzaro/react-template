@@ -1,47 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Great+Vibes&family=Griffy&family=Heebo:wght@900&family=Montserrat:wght@400;500;600;700&family=Poppins&family=Press+Start+2P&family=Space+Mono&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
 
 :root {
-  --primary-font: 'Poppins', 'Segoe UI', Candara,
-    'Bitstream Vera Sans', 'DejaVu Sans', 'Bitstream Vera Sans',
-    'Trebuchet MS', Verdana, 'Verdana Ref', sans-serif;
-  --label-font: 'Bebas Neue', Impact, Haettenschweiler,
-    'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat',
-    'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
-
-  --header-color: #00a8c6;
-  --button-color: #89dfe7;
-  --subheader-color: #40c0cb;
-  --offset-color: #d3dcbd;
-  --color-4: #b9d660;
-  --tag-color: #e4fdff;
-  --light-accent-color: #e5f1bf;
-  --background-color: #f9f2e7;
-  --black-color: rgb(27, 42, 48);
-  --caption-color: rgb(65, 99, 112);
-  --white-color: white;
-
-  --padding: 20px;
-  --padding-half: calc(var(--padding) / 2);
-  @media (min-width: 700px) {
-    --padding: 40px;
-  }
-
-  --header-height: 35px;
-  @media (min-width: 700px) {
-    --header-height: 50px;
-  }
+  --white: white;
+  --pink: mistyrose;
+  --nav-link: dimgrey;
+  --paragraph-color: rgba(240, 248, 255, 0.783);
+  --black: black;
+  --purple: lavender;
+  --linen: linen;
 }
 
 body {
-  font-family: var(--primary-font);
-  background: var(--background-color);
-  color: var(--black-color);
+  /* font-family: 'Space Mono', monospace; */
+  font-family: 'Montserrat', sans-serif;
+
 }
 
-:global(.label-text) {
-  font-family: var(--label-font);
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  font-size: 1.2rem;
+  padding: 30px;
+  letter-spacing: 3px;
+}
+
+
+p {
+  font-size: .8rem;
+  padding-top: 40px;
 }
