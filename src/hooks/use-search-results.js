@@ -35,6 +35,7 @@ export default function useSearchResults() {
       setSearchResults(body.results);
     } catch (e) {
       setError('Error searching pokedex ');
+      return error;
     }
   };
   useEffect(() => void searchPokedex(usableSearchParams), []);
